@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* BACKGROUND GRADIENT */
+        body {
+            background: linear-gradient(135deg, #001f3f, #004aad, #1e90ff);
+            background-size: 300% 300%;
+            animation: bgMove 10s ease infinite;
+            color: #e9f2ff;
+            padding: 40px;
+        }
+
+        @keyframes bgMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* CENTERED CONTAINER */
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0, 140, 255, 0.3);
+            animation: fadeIn 1.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* TITLE */
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            color: #dcecff;
+            text-shadow: 0 0 10px rgba(0, 150, 255, 0.7);
+        }
+
+        /* FLEX IMAGE + TEXT */
+        .intro-section {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        /* IMAGE */
+        .intro-section img {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid rgba(110, 170, 255, 0.7);
+            box-shadow: 0 0 25px rgba(0, 150, 255, 0.6);
+            animation: zoomIn-1s ease;
+        }
+
+        @keyframes zoomIn {
+            from {transform: scale(0.8); opacity: 0;}
+            to {transform: scale(1); opacity: 1;}
+        }
+
+        /* DESCRIPTION */
+        .intro-section p {
+            max-width: 500px;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+            color: #e2eeff;
+        }
+
+        /* BUTTONS */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        a.button {
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 15px;
+            color: #e5f3ff;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(110, 170, 255, 0.7);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 140, 255, 0.25);
+        }
+
+        a.button:hover {
+            background: #3fa2ff;
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 160, 255, 0.8);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HELLO</h1>
+
+        <div class="intro-section">
+            <img src="try.png" alt="Profile">
+
+            <p>
+                I am a Grade 11 ICT student passionate about learning technology, improving my coding skills,
+                and exploring digital tools. Every day, I aim to become more knowledgeable and prepare myself
+                for a future career in the tech world—especially in fields like programming, cybersecurity, 
+                and digital innovation.
+            </p>
+        </div>
+
+        <div class="btn-container">
+            <a class="button" href="project.html">Projects</a>
+            <a class="button" href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
